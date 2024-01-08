@@ -1,16 +1,29 @@
+// Header.js
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Header() {
     return (
-        <header style={{ backgroundColor: '#333', color: 'white', padding: '10px 0', textAlign: 'center' }}>
-            <h1>Connor Swanson: Portfolio</h1>
-            <nav>
-                <Link to="/" style={{ margin: '0 10px', color: 'white', textDecoration: 'none' }}>Home</Link>
-                <Link to="/about" style={{ margin: '0 10px', color: 'white', textDecoration: 'none' }}>About</Link>
-                <Link to="/projects" style={{ margin: '0 10px', color: 'white', textDecoration: 'none' }}>Projects</Link>
-                <Link to="/contact" style={{ margin: '0 10px', color: 'white', textDecoration: 'none' }}>Contact</Link>
-            </nav>
+        <header className="nav-bar">
+            <div className="title-and-icons">
+                <h1>Connor Swanson: Software Engineer</h1>
+                <div className="social-links">
+                    {/* LinkedIn Icon */}
+                    <a href="https://www.linkedin.com/in/connorswanson" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i className="fab fa-linkedin"></i>
+                    </a>
+                    {/* GitHub Icon */}
+                    <a href="https://github.com/connorswanson1" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i className="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <ul className="nav-links">
+                <li><NavLink to="/" exact>Home</NavLink></li>
+                <li><NavLink to="/about">About</NavLink></li>
+                <li><NavLink to="/projects">Projects</NavLink></li>
+                <li><NavLink to="/contact">Contact</NavLink></li>
+            </ul>
         </header>
     );
 }
