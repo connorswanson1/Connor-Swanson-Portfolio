@@ -6,7 +6,7 @@ function Header() {
     return (
         <header className="nav-bar">
             <div className="title-and-icons">
-                <h1>Connor Swanson: Software Engineer</h1>
+                <h1>Connor Swanson</h1>
                 <div className="social-links">
                     {/* LinkedIn Icon */}
                     <a href="https://www.linkedin.com/in/connorswanson" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">

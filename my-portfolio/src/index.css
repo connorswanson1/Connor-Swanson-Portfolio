@@ -170,3 +170,104 @@ footer {
     font-size: 0.8em;
   }
 }
+
+/* Home.css */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* Align children to the bottom */
+  min-height: 100vh;
+  /* Minimum height to take up the full viewport height */
+  padding: 0px;
+  background-color: #f0f0f0;
+  /* Or any background color you prefer */
+}
+
+.image-container {
+  flex: 2;
+  /* Take up half the space */
+  height: 100vh;
+  /* Full height of the viewport */
+}
+
+.profile-photo {
+  width: 100%;
+  /* Take up all available width */
+  height: 100%;
+  /* Take up all available height */
+  object-fit: cover;
+  /* Cover the space without stretching */
+}
+
+.text-container {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  /* Updated from 'start' to 'flex-start' */
+  padding-right: 20px;
+  /* Add some spacing between the text and the image */
+  padding: 3%;
+}
+
+
+.intro-text {
+  /* Positioning for the text itself */
+  max-width: 600px;
+  /* Maximum width for the text */
+  padding-bottom: 10px;
+  /* You can add margin-top with a large value to push it down from the top if needed */
+}
+
+h1,
+p {
+  margin: 0;
+  /* Remove default margin */
+}
+
+h1 {
+  font-size: 5.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.name-highlight {
+  color: #00a6ff;
+  /* Or any color you prefer */
+}
+
+/* Add responsive design for smaller screens */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    /* Stack image and text vertically */
+    align-items: center;
+    /* Center align items */
+  }
+
+  .image-container,
+  .text-container {
+    flex: none;
+    /* Do not stretch */
+    width: 100%;
+    /* Full width */
+    padding: 0;
+    /* Remove padding */
+  }
+
+  .profile-photo {
+    height: 50vh;
+    /* Take up half the viewport height */
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
