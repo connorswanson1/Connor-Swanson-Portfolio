@@ -1,6 +1,7 @@
 // Home.js
 import React from 'react';
 import profilePhoto from '../assets/profile.jpg';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom for navigation
 
 function Home() {
   return (
@@ -9,7 +10,11 @@ function Home() {
         <div className="intro-text">
           <h1>Hi, I'm <span className="name-highlight">Connor Swanson</span></h1>
           <p>Software Engineer | Tech Enthusiast | Problem Solver</p>
-          {/* Add buttons or links for projects or contact here */}
+          <div className="button-container">
+            <Link to="/about" className="home-button">About Me</Link>
+            <Link to="/projects" className="home-button">Projects</Link>
+            <Link to="/contact" className="home-button">Contact</Link>
+          </div>
         </div>
       </div>
       <div className="image-container">

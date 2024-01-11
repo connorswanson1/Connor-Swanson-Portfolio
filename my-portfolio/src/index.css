@@ -91,11 +91,16 @@ footer {
 }
 
 .nav-links li:last-child a {
-  background-color: #007bff;
+  background-color: #00a6ff;
   /* Color for the last item */
   color: white;
   padding: 5px 10px;
   border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nav-links li:last-child a:hover {
+  background-color: #003064
 }
 
 /* Social Links in Header */
@@ -121,7 +126,7 @@ footer {
 }
 
 .social-links a:hover {
-  color: #007bff;
+  color: #00a6ff;
   /* Color for icon hover state */
 }
 
@@ -145,7 +150,7 @@ footer {
 .footer {
   padding: 10px 20px;
   /* Adjust padding to your preference */
-  background-color: #333;
+  background-color: #000000;
   /* Dark background for the footer */
   color: white;
   /* Light text color for contrast */
@@ -161,7 +166,7 @@ footer {
   margin: 0;
   /* Remove default margin */
   padding: 0;
-  font-size: 0.9em;
+  font-size: 0.8em;
   /* Smaller font size for the footer text */
 }
 
@@ -230,6 +235,7 @@ h1 {
 }
 
 p {
+  padding-top: 2%;
   font-size: 1.2rem;
   color: #555;
 }
@@ -237,6 +243,45 @@ p {
 .name-highlight {
   color: #00a6ff;
   /* Or any color you prefer */
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  /* Stack buttons vertically */
+  align-items: left;
+  /* Center buttons left */
+  gap: 30px;
+  /* Add space between buttons */
+  margin-top: 40px;
+  /* Add space between text and buttons */
+}
+
+.home-button {
+  background-color: #dedede;
+  /* Button background color */
+  color: #000000;
+  /* Button text color */
+  text-align: center;
+  /* Allign text to center */
+  text-decoration: none;
+  /* Remove underline from links */
+  padding: 20px 30px;
+  /* Button padding */
+  border: none;
+  /* Remove border */
+  border-radius: 10px;
+  /* Rounded corners for buttons */
+  cursor: pointer;
+  /* Pointer cursor on hover */
+  transition: background-color 0.5s;
+  /* Smooth transition for hover effect */
+}
+
+.home-button:hover {
+  color: #ffffff;
+  background-color: #555;
+  /* Darker shade on hover for visual feedback */
 }
 
 /* Add responsive design for smaller screens */
@@ -259,8 +304,8 @@ p {
   }
 
   .profile-photo {
-    height: 50vh;
-    /* Take up half the viewport height */
+    height: 100vh;
+    /* Take up full viewport height */
   }
 
   h1 {
@@ -270,4 +315,27 @@ p {
   p {
     font-size: 1rem;
   }
+
+  .home-button {
+    align-items: center;
+  }
 }
+
+/* About Page Styling */
+
+.about-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.about-image {
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+  /* Circular image */
+  margin-bottom: 20px;
+}
+
+/* Add more styles as needed */

@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
+import About from './pages/About';
 
 // Placeholder components for different pages
-const About = () => <div>About Page</div>;
 const Projects = () => <div>Projects Page</div>;
 const Contact = () => <div>Contact Page</div>;
 
