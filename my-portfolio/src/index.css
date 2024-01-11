@@ -80,27 +80,37 @@ footer {
 
 .nav-links li a {
   text-decoration: none;
+  font-weight: bold;
+  /* Make the text bold */
   color: #333;
   /* Or any color that suits your design */
+  padding: 10px;
+  /* Adjust the padding as needed */
+  border-radius: 5px;
+  /* Rounded corners for the highlight */
   transition: color 0.3s ease;
 }
 
 .nav-links li a:hover {
   color: #000;
   /* Or any color for hover state */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
 }
 
 .nav-links li:last-child a {
-  background-color: #00a6ff;
+  background-color: #333;
   /* Color for the last item */
   color: white;
+  font-weight: bold;
+  /* Make the text bold */
   padding: 5px 10px;
   border-radius: 5px;
   transition: background-color 0.3s;
 }
 
 .nav-links li:last-child a:hover {
-  background-color: #003064
+  background-color: #00a6ff;
 }
 
 /* Social Links in Header */
@@ -266,6 +276,8 @@ p {
   /* Allign text to center */
   text-decoration: none;
   /* Remove underline from links */
+  font-weight: bold;
+  /* Make the text bold */
   padding: 15px 30px;
   /* Button padding */
   border: none;
@@ -276,6 +288,16 @@ p {
   /* Pointer cursor on hover */
   transition: background-color 0.5s;
   /* Smooth transition for hover effect */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Alignments for icon */
+}
+
+.home-button i,
+.home-button svg {
+  margin-left: 8px;
+  /* Add space between icon and text */
 }
 
 .home-button:hover {
@@ -284,7 +306,24 @@ p {
   /* Darker shade on hover for visual feedback */
 }
 
-/* Add responsive design for smaller screens */
+/* About Page Styling */
+
+.about-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.about-image {
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+  /* Circular image */
+  margin-bottom: 20px;
+}
+
+/* Responsive design for smaller screens */
 @media (max-width: 768px) {
   .home-container {
     flex-direction: column;
@@ -324,23 +363,6 @@ p {
     flex-direction: column;
     align-items: center;
   }
-}
-
-/* About Page Styling */
-
-.about-container {
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;
-  text-align: center;
-}
-
-.about-image {
-  max-width: 200px;
-  height: auto;
-  border-radius: 50%;
-  /* Circular image */
-  margin-bottom: 20px;
 }
 
 /* Add more styles as needed */

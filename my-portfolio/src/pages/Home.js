@@ -2,6 +2,8 @@
 import React from 'react';
 import profilePhoto from '../assets/profile.jpg';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom for navigation
+import { FaEnvelope } from 'react-icons/fa';
+
 
 function Home() {
   return (
@@ -11,7 +13,7 @@ function Home() {
           <h1>Hi, I'm <span className="name-highlight">Connor Swanson</span></h1>
           <p>Software Engineer | Tech Enthusiast | Problem Solver</p>
           <div className="button-container">
-            <Link to="/contact" className="home-button">Contact</Link>
+            <Link to="/contact" className="home-button"> Contact <FaEnvelope /></Link>
           </div>
         </div>
       </div>
