@@ -247,26 +247,26 @@ p {
 
 .button-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   /* Stack buttons vertically */
   align-items: left;
-  /* Center buttons left */
+  /* Align buttons left */
   gap: 30px;
   /* Add space between buttons */
-  margin-top: 40px;
+  margin-top: 5%;
   /* Add space between text and buttons */
 }
 
 .home-button {
-  background-color: #dedede;
+  background-color: #00a6ff;
   /* Button background color */
-  color: #000000;
+  color: #ffffff;
   /* Button text color */
   text-align: center;
   /* Allign text to center */
   text-decoration: none;
   /* Remove underline from links */
-  padding: 20px 30px;
+  padding: 15px 30px;
   /* Button padding */
   border: none;
   /* Remove border */
@@ -280,7 +280,7 @@ p {
 
 .home-button:hover {
   color: #ffffff;
-  background-color: #555;
+  background-color: #003064;
   /* Darker shade on hover for visual feedback */
 }
 
@@ -293,8 +293,11 @@ p {
     /* Center align items */
   }
 
-  .image-container,
   .text-container {
+    align-items: center;
+  }
+
+  .image-container {
     flex: none;
     /* Do not stretch */
     width: 100%;
@@ -316,7 +319,9 @@ p {
     font-size: 1rem;
   }
 
-  .home-button {
+  .button-container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
 }
