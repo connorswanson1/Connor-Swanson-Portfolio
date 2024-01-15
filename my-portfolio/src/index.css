@@ -325,9 +325,9 @@ p {
 }
 
 .about-profile-photo {
-  width: 40%;
+  width: 50%;
   /* Adjust size as needed */
-  max-width: 500px;
+  max-width: 550px;
   /* Adjust max-width as needed */
   height: auto;
   border-radius: 10px;
