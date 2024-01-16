@@ -1,0 +1,172 @@
+/* Home.css */
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* Align children to the bottom */
+    min-height: 100vh;
+    /* Minimum height to take up the full viewport height */
+    padding: 0px;
+    background-color: #f0f0f0;
+    /* Or any background color you prefer */
+}
+
+.image-container {
+    flex: 2;
+    /* Take up half the space */
+    height: 100vh;
+    /* Full height of the viewport */
+}
+
+.profile-photo {
+    width: 100%;
+    /* Take up all available width */
+    height: 100%;
+    /* Take up all available height */
+    object-fit: cover;
+    /* Cover the space without stretching */
+}
+
+.text-container {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    /* Updated from 'start' to 'flex-start' */
+    padding-right: 20px;
+    /* Add some spacing between the text and the image */
+    padding: 3%;
+}
+
+
+.intro-text {
+    /* Positioning for the text itself */
+    max-width: 600px;
+    /* Maximum width for the text */
+    padding-bottom: 10px;
+    /* You can add margin-top with a large value to push it down from the top if needed */
+}
+
+h1,
+p {
+    margin: 0;
+    /* Remove default margin */
+}
+
+h1 {
+    font-size: 5.5rem;
+}
+
+p {
+    padding-top: 2%;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.name-link {
+    color: #00a6ff;
+    /* Link color, adjust as needed */
+    text-decoration: none;
+    /* Remove the underline from the link */
+    transition: color 0.4s ease-in-out;
+    /* Smooth color transition for hover effect */
+}
+
+.name-link:hover,
+.name-link:focus {
+    color: #003064;
+    /* Darker shade on hover, adjust as needed */
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    /* Stack buttons vertically */
+    align-items: left;
+    /* Align buttons left */
+    gap: 30px;
+    /* Add space between buttons */
+    margin-top: 5%;
+    /* Add space between text and buttons */
+}
+
+.home-button {
+    background-color: #00a6ff;
+    /* Button background color */
+    color: #ffffff;
+    /* Button text color */
+    text-align: center;
+    /* Allign text to center */
+    text-decoration: none;
+    /* Remove underline from links */
+    font-weight: bold;
+    /* Make the text bold */
+    padding: 15px 30px;
+    /* Button padding */
+    border: none;
+    /* Remove border */
+    border-radius: 10px;
+    /* Rounded corners for buttons */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.5s;
+    /* Smooth transition for hover effect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Alignments for icon */
+}
+
+.home-button i,
+.home-button svg {
+    margin-left: 8px;
+    /* Add space between icon and text */
+}
+
+.home-button:hover {
+    color: #ffffff;
+    background-color: #003064;
+    /* Darker shade on hover for visual feedback */
+}
+
+/* Additional Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .home-container {
+        flex-direction: column;
+        /* Stack image and text vertically */
+        align-items: center;
+        /* Center align items */
+    }
+
+    .text-container {
+        align-items: center;
+    }
+
+    .image-container {
+        flex: none;
+        /* Do not stretch */
+        width: 100%;
+        /* Full width */
+        padding: 0;
+        /* Remove padding */
+    }
+
+    .profile-photo {
+        height: 100vh;
+        /* Take up full viewport height */
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

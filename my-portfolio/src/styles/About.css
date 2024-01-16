@@ -1,0 +1,73 @@
+/* About.css */
+
+.about-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px;
+    background-color: #f0f0f0;
+    /* Adjust the background color as needed */
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    /* Or any max-width that suits your design */
+}
+
+.about-profile-photo {
+    width: 50%;
+    /* Adjust size as needed */
+    max-width: 550px;
+    /* Adjust max-width as needed */
+    height: auto;
+    border-radius: 10px;
+    /* Adjust for rounded corners */
+    margin-right: 50px;
+    /* Space between the image and the text */
+}
+
+.about-text {
+    text-align: left;
+    width: 60%;
+    /* Adjust width as needed */
+}
+
+.about-text h1 {
+    font-size: 2rem;
+    /* Large font size for your name */
+    margin-bottom: 0.5em;
+}
+
+.about-text p {
+    font-size: 1rem;
+    color: #666;
+    /* Subtle text color for the paragraph */
+    line-height: 1.6;
+    /* Adjust line height for readability */
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-profile-photo {
+        width: 70%;
+        /* Larger size for smaller screens */
+        max-width: none;
+        /* Override max-width for smaller screens */
+        margin-right: 0;
+        /* Reset margin-right for smaller screens */
+        margin-bottom: 20px;
+        /* Add space between image and text on smaller screens */
+    }
+
+    .about-text {
+        width: 100%;
+        /* Full width on smaller screens */
+    }
+}

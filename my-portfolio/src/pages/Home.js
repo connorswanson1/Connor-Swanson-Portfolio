@@ -3,6 +3,7 @@ import React from 'react';
 import profilePhoto from '../assets/profile.jpg';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom for navigation
 import { FaEnvelope } from 'react-icons/fa';
+import '../styles/Home.css';
 
 
 function Home() {

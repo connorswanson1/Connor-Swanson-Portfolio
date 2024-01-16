@@ -1,5 +1,6 @@
 import React from 'react';
-import profilePhoto from '../assets/sunset_portrait.jpg'; // Path to your profile photo
+import profilePhoto from '../assets/sunset_portrait.jpg';
+import '../styles/About.css';
 
 function About() {
     return (
