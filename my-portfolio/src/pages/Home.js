@@ -10,7 +10,7 @@ function Home() {
     <div className="home-container">
       <div className="text-container">
         <div className="intro-text">
-          <h1>Hi, I'm <span className="name-highlight">Connor Swanson</span></h1>
+          <h1>Hi, I'm <Link to="/about" className="name-link">Connor Swanson</Link></h1>
           <p>Software Engineer | Tech Enthusiast | Problem Solver</p>
           <div className="button-container">
             <Link to="/contact" className="home-button"> Contact <FaEnvelope /></Link>

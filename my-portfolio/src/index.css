@@ -250,6 +250,21 @@ p {
   color: #555;
 }
 
+.name-link {
+  color: #00a6ff;
+  /* Link color, adjust as needed */
+  text-decoration: none;
+  /* Remove the underline from the link */
+  transition: color 0.4s ease-in-out;
+  /* Smooth color transition for hover effect */
+}
+
+.name-link:hover,
+.name-link:focus {
+  color: #003064;
+  /* Darker shade on hover, adjust as needed */
+}
+
 .name-highlight {
   color: #00a6ff;
   /* Or any color you prefer */
