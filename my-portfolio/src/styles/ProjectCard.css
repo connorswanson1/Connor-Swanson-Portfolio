@@ -1,0 +1,21 @@
+.project-card {
+    width: 300px;
+    /* Fixed width */
+    border: 1px solid #ddd;
+    /* Light border */
+    border-radius: 8px;
+    /* Rounded corners */
+    overflow: hidden;
+    /* Keep everything inside the border */
+    text-align: center;
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    /* Fixed height */
+    object-fit: cover;
+    /* Cover the card area */
+}
+
+/* Add more styles for title, description, etc. */

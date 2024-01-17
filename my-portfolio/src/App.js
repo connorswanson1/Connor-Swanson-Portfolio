@@ -5,9 +5,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
-
-// Placeholder components for different pages
-const Projects = () => <div>Projects Page</div>;
+import Projects from './pages/Projects';
 
 function App() {
   return (
