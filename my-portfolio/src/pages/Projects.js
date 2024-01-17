@@ -12,6 +12,20 @@ function Projects() {
             imageUrl: 'url-to-image',
             // ... other project details
         },
+        {
+            id: 2,
+            title: 'Project Two',
+            description: 'Brief description of Project Two...',
+            imageUrl: 'url-to-image',
+            // ... other project details
+        },
+        {
+            id: 3,
+            title: 'Project Three',
+            description: 'Brief description of Project Three...',
+            imageUrl: 'url-to-image',
+            // ... other project details
+        },
         // ... more projects
     ];
 
