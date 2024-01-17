@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    min-height: 100vh;
+    min-height: 85vh;
     padding: 30px;
     background-color: #f0f0f0;
 }
@@ -14,6 +14,7 @@
     /* Style for form container */
     padding-right: 30px;
     /* Add some spacing between the form and the info container */
+    margin: 2.5%;
 }
 
 .contact-info-container {
