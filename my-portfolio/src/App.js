@@ -4,10 +4,10 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
+import Contact from './pages/Contact';
 
 // Placeholder components for different pages
 const Projects = () => <div>Projects Page</div>;
-const Contact = () => <div>Contact Page</div>;
 
 function App() {
   return (

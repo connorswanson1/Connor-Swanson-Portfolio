@@ -1,0 +1,133 @@
+/* Contact.css */
+
+.contact-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 30px;
+    background-color: #f0f0f0;
+}
+
+.contact-form-container {
+    flex: 1.5;
+    /* Style for form container */
+    padding-right: 30px;
+    /* Add some spacing between the form and the info container */
+}
+
+.contact-info-container {
+    flex: 1;
+    text-align: center;
+    /* Center the content */
+    padding-left: 30px;
+    /* Add some spacing between the info container and the form */
+}
+
+.contact-photo {
+    max-width: 100%;
+    /* Full width within the container */
+    height: auto;
+    border-radius: 10px;
+    /* Soften the edges with a border radius */
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* Space between icons */
+    padding-top: 30px;
+}
+
+.contact-links a {
+    font-size: 2rem;
+    /* Size of the icons */
+    color: #333;
+    /* Icon color */
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-links a:hover {
+    color: #00a6ff;
+    /* Darken the icon color on hover */
+}
+
+.contact-form-container h1,
+p {
+    margin: 0;
+    /* Remove default margin */
+}
+
+.contact-form-container h1 {
+    font-size: 5.5rem;
+}
+
+.contact-form-container p {
+    font-size: 1.2rem;
+    color: #555;
+    padding-bottom: 3%;
+}
+
+
+/* Form styling */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Space between form fields */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    /* Full width of the container */
+    padding: 10px;
+    margin: 5px 0;
+    /* Add some space above and below each field */
+    border: 1px solid #ccc;
+    /* Light border for the inputs */
+    border-radius: 5px;
+    /* Rounded corners for the inputs */
+}
+
+.contact-form textarea {
+    height: 150px;
+    /* Larger height for message input */
+    resize: vertical;
+    /* Allow vertical resizing */
+}
+
+.submit-button {
+    padding: 15px 20px;
+    background-color: #00a6ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .contact-page {
+        flex-direction: column;
+    }
+
+    .contact-form-container,
+    .contact-info-container {
+        padding: 0;
+        width: 100%;
+        /* Full width on smaller screens */
+    }
+
+    .contact-links {
+        flex-direction: row;
+        /* Stack icons vertically on smaller screens */
+    }
+}
