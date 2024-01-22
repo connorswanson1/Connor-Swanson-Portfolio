@@ -9,7 +9,7 @@ function Projects() {
         {
             id: 1,
             title: 'Gamified Task Tracker',
-            description: 'iOS and Android App used for administering, tracking, and completing tasks.',
+            description: 'iOS and Android App used for administering, tracking, and completing tasks. My main roles in this project involved front-end planning with, wireframes and mockups, and later with making the app runnable on iOS devices.',
             imageUrl: proj1Photo,
             videoUrl: 'https://www.youtube.com/embed/n6FNI6N8nVw?si=DTipHvPzAKcCydYg',
             githubUrl: 'https://github.com/thejacobhardman/Gamified-Task-Tracker',
