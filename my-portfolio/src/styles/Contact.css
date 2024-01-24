@@ -120,15 +120,18 @@ p {
         flex-direction: column;
     }
 
-    .contact-form-container,
+    .contact-form-container {
+        padding: 0;
+        width: 91%;
+        /* Full width on smaller screens */
+    }
+
     .contact-info-container {
         padding: 0;
-        width: 100%;
-        /* Full width on smaller screens */
     }
 
     .contact-links {
         flex-direction: row;
-        /* Stack icons vertically on smaller screens */
+        padding-bottom: 10px;
     }
 }
