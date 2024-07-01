@@ -24,6 +24,11 @@ function ProjectCard({ project }) {
                         <img src={project.imageUrl} alt={project.title} className="project-image" />
                     )
                 )}
+                {project.siteUrl && (
+                    <div className="project-site-link">
+                        <a href={project.siteUrl} target="_blank" rel="noopener noreferrer">Visit Site</a>
+                    </div>
+                )}
                 {project.githubUrl && (
                     <div className="project-github-link">
                         <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">View on GitHub</a>

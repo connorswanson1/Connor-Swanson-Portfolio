@@ -1,9 +1,9 @@
 .project-card {
-    display: flex;
+    display: flex-start;
     /* Use flexbox for layout */
     align-items: center;
     /* Align items vertically in the center */
-    height: 500px;
+    height: 700px;
     width: 500px;
     border: 2px solid #ddd;
     border-radius: 25px;
@@ -13,8 +13,9 @@
 }
 
 .project-card:hover {
-    height: 510px;
-    width: 510px;
+    /* height: 750px;
+    width: 500px; */
+    border: 2px solid #bbb;
 }
 
 .project-text {
@@ -22,14 +23,17 @@
     /* Take up the remaining space */
     padding: 20px;
     /* Add some padding around the text */
+    margin-bottom: 16px;
     text-align: center;
 }
 
 .project-image {
-    width: 50%;
+    max-width: 100%;
     /* Adjust width as necessary */
     height: auto;
     /* Maintain aspect ratio */
+    border-radius: 8px;
+    margin-bottom: 16px;
     object-fit: cover;
     /* Cover the area without stretching */
 }
@@ -41,8 +45,7 @@ h3 {
 }
 
 p {
-    margin-bottom: 0;
-    /* Remove default bottom margin */
+    margin-bottom: 16px;
 }
 
 .video-container {
@@ -65,11 +68,13 @@ p {
     /* Full height */
 }
 
+.project-site-link,
 .project-github-link {
     margin-top: 10px;
     text-align: center;
 }
 
+.project-site-link a,
 .project-github-link a {
     color: #007bff;
     /* GitHub link color */
@@ -80,7 +85,22 @@ p {
     /* Smooth color transition */
 }
 
+.project-site-link a:hover,
 .project-github-link a:hover {
     color: #0056b3;
     /* Darken color on hover */
+    text-decoration: underline;
+}
+
+/* Additional Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .project-card {
+        max-height: 550px;
+    }
+
+    .project-site-link,
+    .project-github-link {
+        margin-top: 5px;
+    }
+
 }
