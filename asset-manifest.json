@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/Connor-Swanson-Portfolio/static/css/main.b43754ff.css",
-    "main.js": "/Connor-Swanson-Portfolio/static/js/main.4af81541.js",
-    "static/js/787.2dcca737.chunk.js": "/Connor-Swanson-Portfolio/static/js/787.2dcca737.chunk.js",
+    "main.css": "/Connor-Swanson-Portfolio/static/css/main.3b0a8b6a.css",
+    "main.js": "/Connor-Swanson-Portfolio/static/js/main.bea3a4b9.js",
+    "static/js/453.acca0757.chunk.js": "/Connor-Swanson-Portfolio/static/js/453.acca0757.chunk.js",
     "static/media/bridge_portrait.jpg": "/Connor-Swanson-Portfolio/static/media/bridge_portrait.a2891da481036347bff6.jpg",
     "static/media/sunset_portrait.jpg": "/Connor-Swanson-Portfolio/static/media/sunset_portrait.43d5bb6bc13ea42360c1.jpg",
     "static/media/profile.jpg": "/Connor-Swanson-Portfolio/static/media/profile.d6b4b6cab757e5b7b28f.jpg",
+    "static/media/tsdb_ss.png": "/Connor-Swanson-Portfolio/static/media/tsdb_ss.b8b4e85f4662f72e10df.png",
     "static/media/gtt_ss.png": "/Connor-Swanson-Portfolio/static/media/gtt_ss.0b94b542f30412718894.png",
     "index.html": "/Connor-Swanson-Portfolio/index.html",
-    "main.b43754ff.css.map": "/Connor-Swanson-Portfolio/static/css/main.b43754ff.css.map",
-    "main.4af81541.js.map": "/Connor-Swanson-Portfolio/static/js/main.4af81541.js.map",
-    "787.2dcca737.chunk.js.map": "/Connor-Swanson-Portfolio/static/js/787.2dcca737.chunk.js.map"
+    "main.3b0a8b6a.css.map": "/Connor-Swanson-Portfolio/static/css/main.3b0a8b6a.css.map",
+    "main.bea3a4b9.js.map": "/Connor-Swanson-Portfolio/static/js/main.bea3a4b9.js.map",
+    "453.acca0757.chunk.js.map": "/Connor-Swanson-Portfolio/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b43754ff.css",
-    "static/js/main.4af81541.js"
+    "static/css/main.3b0a8b6a.css",
+    "static/js/main.bea3a4b9.js"
   ]
 }
